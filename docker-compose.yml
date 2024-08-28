@@ -10,6 +10,8 @@ services:
     build:
       context: .
       dockerfile: ODPC.Server/Dockerfile
+    ports:
+      - "62230:8080"
     depends_on:
       - postgres-db
   postgres-db:
