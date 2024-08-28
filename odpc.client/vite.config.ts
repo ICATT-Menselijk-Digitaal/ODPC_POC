@@ -5,9 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-  ],
+  plugins: [vue()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -15,7 +13,7 @@ export default defineConfig({
   },
   server: {
     proxy: {
-          '/api': 'http://localhost:55957'
+      '/api': 'http://localhost:62230'
     }
   }
 })
